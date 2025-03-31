@@ -4,44 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Linda's weather app</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id=weather-app>
-        <header>
-            <form>
-      <input id="city-search-input" class="city-search-input"
-        type="search"
-        placeholder="Search for a city.."
-        required
-        autofocus
-      />
-      <input type="submit" value="Search" class="city-search-button" />
-    </form></header>
-   <main> <div> <h1 id="city-name">Vienna</h1>
-   <p>Saturday 14:55, clear sky </br>Humidity: 44%, Wind: 7.2km/h</p></div></main>
-     <div>21°C</div>
+    <div id="weather-app">
+      <header>
+        <form>
+          <input
+            id="city-search-input"
+            class="city-search-input"
+            type="search"
+            placeholder="Search for a city.."
+            required
+            autofocus
+          />
+          <input type="submit" value="Search" class="city-search-button" />
+        </form>
+      </header>
+      <br />
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 id="city-name">Vienna</h1>
+            <p id="weather-app-details">
+              <span id="time">Saturday 14:55</span>,
+              <span id="weather-condition">clear sky</span><br />Humidity:
+              <strong id="humidity">44%</strong>, Wind:
+              <strong id="wind-speed">7.2km/h</strong>
+            </p>
+          </div>
 
-    <footer>
-      This project was coded by
-      <a href="https://github.com/lindath0905/weather-app-linda" target="_blank"
-        >Linda Thurner</a
-      >
-      , is
-      <a
-        href="https://github.com/lindath0905/weather-app-linda"
-        target="_blank"
-      >
-        open-sourced on GitHub</a
-      >
-      and
-      <a href="https://weather-app-linda-th.netlify.app/" target="_blank"
-        >hosted on Netlify
-      </a>
-    </footer>
+          <div class="temperature-container">
+            <span id="emoji">🌤️</span>
+            <span id="temperature">21</span>
+            <span class="temperature-unit">°C</span>
+          </div>
+        </div>
+      </main>
+      <br />
+      <footer>
+        This project was coded by
+        <a
+          href="https://github.com/lindath0905/weather-app-linda"
+          target="_blank"
+          >Linda Thurner</a
+        >
+        , is
+        <a
+          href="https://github.com/lindath0905/weather-app-linda"
+          target="_blank"
+        >
+          open-sourced on GitHub</a
+        >
+        and
+        <a href="https://weather-app-linda-th.netlify.app/" target="_blank"
+          >hosted on Netlify
+        </a>
+      </footer>
     </div>
     <script scr="script.js"></script>
   </body>
