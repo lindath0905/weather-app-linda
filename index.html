@@ -11,11 +11,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body>
     <div id="weather-app">
       <header>
-        <form>
+        <form id="search-form">
           <input
             id="city-search-input"
             class="city-search-input"
@@ -31,19 +32,18 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 id="city-name">Vienna</h1>
+            <h1 id="city">Vienna</h1>
             <p id="weather-app-details">
-              <span id="time">Saturday 14:55</span>,
-              <span id="weather-condition">clear sky</span><br />Humidity:
-              <strong id="humidity">44%</strong>, Wind:
-              <strong id="wind-speed">7.2km/h</strong>
+              <span id="time"></span>, <span id="weather-condition"></span
+              ><br />Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
             </p>
           </div>
 
-          <div class="temperature-container">
-            <span id="emoji">🌤️</span>
-            <span id="temperature">21</span>
-            <span class="temperature-unit">°C</span>
+          <div id="temperature-container">
+            <span id="emoji"></span>
+            <span id="temperature"></span>
+            <div id="unit">°C</div>
           </div>
         </div>
       </main>
@@ -68,6 +68,6 @@
         </a>
       </footer>
     </div>
-    <script scr="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
